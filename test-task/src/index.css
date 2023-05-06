@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.MuiDataGrid-colCell:hover .custom-icon {
+  visibility: visible !important;
+}
+
+.MuiDataGrid-selectedRowCount {
+  visibility: hidden !important;
+  width: auto !important;
+  height: auto !important;
+}
+.MuiDataGrid-row.selected-row .MuiDataGrid-cell:last-child {
+  position: relative;
+}
+
+.MuiDataGrid-row.selected-row .MuiDataGrid-cell:last-child::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 8px solid #1976d2;
+  transform: translateY(-50%);
+}
+.MuiDataGrid-root .MuiDataGrid-columnsContainer {
+  height: 60vh !important;
+}
+
+.MuiDataGrid-root .MuiDataGrid-virtualScroller {
+  overflow-y: hidden !important;
+}

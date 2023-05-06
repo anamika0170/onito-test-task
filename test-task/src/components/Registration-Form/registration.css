@@ -1,0 +1,25 @@
+h3{
+    color: black;
+    /* text-align: center; */
+    padding-top: 10px;
+}
+.inputLabel{
+    color: black !important;
+}
+.inputBox{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-evenly !important;
+    color: black !important;
+}
+.inputBox .textField{
+    color: black !important;
+    background-color: white !important;
+    border: none !important;
+    height: 5vh !important;
+    border-radius: 5px !important;
+}
+.InputHeading{
+    padding-left: 20px;
+    color: black;
+}

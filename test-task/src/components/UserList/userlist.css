@@ -1,0 +1,30 @@
+
+.MuiDataGrid-row.selected-row .MuiDataGrid-cell:last-child {
+    position: relative;
+  }
+  
+  .MuiDataGrid-row.selected-row .MuiDataGrid-cell:last-child::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-right: 8px solid #1976d2;
+    transform: translateY(-50%);
+  }
+
+  .selected-row{
+    display: block;
+  }
+  .unselected-row{
+    display: none;
+  }
+.deleteBtn{
+  cursor: pointer !important;
+}
+.MuiDataGrid-columnHeaderTitle{
+  width: 100% !important;
+}
